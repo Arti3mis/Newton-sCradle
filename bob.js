@@ -4,9 +4,9 @@ class bob
 	{
 		var options={
 			isStatic:false,
-			restitution:0,
+			restitution:1.5,
 			friction:0.5,
-			density:0.2
+			density:3.0
 			}
 		this.x=x;
 		this.y=y;
@@ -20,7 +20,7 @@ class bob
 			push();
 			fill(255,0,255);
 			ellipseMode(RADIUS);
-			ellipse(pos.y, pos.y, this.r*2, this.r*2);
+			ellipse(pos.x, pos.y, this.r*2, this.r*2);
 			pop();
 			
 	}
