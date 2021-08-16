@@ -3,10 +3,10 @@ class bob
 	constructor(x,y,r)
 	{
 		var options={
-			isStatic:false,
-			restitution:1.5,
-			friction:0.5,
-			density:3.0
+			isStatic:false, 
+			restitution:1.5, 
+			friction:0, 
+			density:3.5
 			}
 		this.x=x;
 		this.y=y;
@@ -20,7 +20,7 @@ class bob
 			push();
 			fill(255,0,255);
 			ellipseMode(RADIUS);
-			ellipse(pos.x, pos.y, this.r*2, this.r*2);
+			ellipse(pos.x, pos.y, this.r, this.r);
 			pop();
 			
 	}
